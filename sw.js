@@ -37,6 +37,15 @@ self.addEventListener('fetch', function(event) {
      else {
        console.log('Did not find ', event.request, ' in cache. Getting it now!');
        return fetch(event.request)
+       //clone response so browser and cache comsume it
+       .then(function(response){
+         const responseClone = response.clone();
+         caches.open('version1')
+         .then(function(cache) {
+           cache.put(event.request, responseClone);
+       })
+        return response;
+       })
      }
    })
  );
