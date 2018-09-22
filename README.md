@@ -1,7 +1,7 @@
-#Project Overview
+## Project Overview
 In this project I was given a static webpage and tasked with adding in accessibility, and a responsive design so the page could be used on different sized displays and accessible for screen reader use. I also added a service worker for caching the application for offline use.
 
-#Steps Required To Run Application
+## Steps Required To Run Application
 1. Clone or download the repository.
 
 2. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
